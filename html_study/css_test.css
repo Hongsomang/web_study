@@ -1,0 +1,115 @@
+#main{
+  width: 600px;
+  margin: auto;
+  background-color: red;
+  color: white;
+}
+p{
+  width: 600px;
+  margin: auto;
+  color: red;
+}
+#main2{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: red;
+}
+.simple{
+  width: 500px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+  background-color: red;
+}
+.fancy{
+  width: 500px;
+  margin: 20px auto;
+  padding:50px;
+  border: solid blue 10px;
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+  background-color: red;
+}
+.static{
+  position: static;
+}
+.relative1{
+  position: relative;
+  background-color: red;
+}
+.relative2{
+  position: relative;
+  top:-20px;
+  left: 20px;
+  background-color: green;
+  width: 500px;
+}
+.fixed{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  border: solid yellow 10px;
+}
+.relative{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  border: solid red 10px;
+}
+.absolute{
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300;
+  height: 200px;
+  background:green;
+}
+.container{
+  position: relative;
+  border: solid blue 5px;
+}
+nav{
+  position: absolute;
+  left: 0px;
+  width: 200px;
+/*  border: solid purple 5px;*/
+  background-color: purple;
+}
+.section1{
+  margin-left: 200px;
+ border: solid black 5px;
+  background-color: yellow;
+
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  border: solid green 10px;
+
+}
+body{
+  margin-bottom: 120px;
+}
+img{
+  float: right;
+  margin: 0 0 1em 1em;
+}
+.text{
+  border: solid red 5px;
+}
+.box{
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+  border: solid blue 5px;
+}
+.section2{
+  border: solid black 5px;
+   background-color: yellow;
+}

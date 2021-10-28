@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css_test.css" type="text/css">
+  </head>
+  <body>
+
+    <div id="main">
+      안녕하세요.
+    </div>
+    <br>
+    <p>안녕하세요.</p>
+    <br>
+    <div id="main2">
+      안녕하세요.
+    </div>
+    <br>
+    <div class="simple">
+      안녕하세요
+    </div>
+    <br>
+    <div class="fancy">
+      안녕하세요.
+    </div>
+    <br>
+    <div class="static">
+      static
+    </div>
+    <br>
+    <div class="relative1">
+      relative는 별도로 지정하지 않는 이상 static과 동일하게 동작
+    </div>
+    <div class="relative2">
+      top, right, bottom, left를 지정하여 기본 위치와 다르게 위치 조정가능,
+      다른 콘테츠는 남긴 공백에 맞춰 들어가게 조정되지 않는다.
+
+    </div>
+
+    <br>
+    <div class="relative">
+        부모 엘리먼트
+        <div class="absolute">
+          상대적으로 위치가 지정되는 것이 아니라 가장가까운 곳에 위치한 조상
+          엘리먼트에 상대적으로 지정된다.
+        </div>
+    </div>
+    <div class="fixed">
+      페이지가 스크롤되더라도 늘 같은 곳에 위치
+    </div>
+    <br>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">홈</a></li>
+          <li><a href="#">타코 메뉴</a></li>
+          <li><a href="#">시간</a></li>
+          <li><a href="#">초안 목록</a></li>
+          <li><a href="#">시간</a></li>
+          <li><a href="#">방향</a></li>
+          <li><a href="#">연락처</a></li>
+        </ul>
+      </nav>
+      <section class="section1">
+        margin-left는 nav가 들어갈 공간을 만들어 줌. 그렇게 하지 않으면 겹침
+      </section>
+      <section class="section1">
+        나랏말ᄊᆞ미 中듀ᇰ國귁에 달아 文문字ᄍᆞᆼ와로 서르 ᄉᆞᄆᆞᆺ디 아니ᄒᆞᆯᄊᆡ 이런 젼ᄎᆞ로 어린百ᄇᆡᆨ姓셔ᇰ이 니르고져 호ᇙ 배 이셔도 ᄆᆞᄎᆞᆷ내 제 ᄠᅳ들 시러 펴디 몯ᄒᆞᇙ 노미 하니라 내 이ᄅᆞᆯ 爲윙ᄒᆞ야 어엿비 너겨 새로 스믈여듧 字ᄍᆞᆼᄅᆞᆯ ᄆᆡᇰᄀᆞ노니 사ᄅᆞᆷ마다 ᄒᆡᅇᅧ 수ᄫᅵ 니겨 날로 ᄡᅮ메 便뼌安ᅙᅡᆫ킈 ᄒᆞ고져 ᄒᆞᇙ ᄯᆞᄅᆞ미니라ㄱ·ᄂᆞᆫ:엄쏘·리·니君군ㄷ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞᄐᆞ·니ᄀᆞᆯ·ᄫᅡ·쓰·면虯뀨ᇢㅸ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니·라ㅋ·ᄂᆞᆫ:엄쏘·리·니快·쾡ㆆ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니·라ㆁ·ᄂᆞᆫ:엄쏘·리·니業·ᅌᅥᆸ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니·라ㄷ·ᄂᆞᆫ·혀쏘·리·니斗두ᇢㅸ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니ᄀᆞᆯ·ᄫᅡ·쓰·면覃땀ㅂ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니·라
+      </section>
+      <section class="section1">
+        가나다라라마바사아자차카파타하 abcdefghijklmnopqrtuvwxyz
+      </section>
+    </div>
+    <footer>
+      고정 헤더나 footer를 사용하다면 그것들이 들어갈 공간을 마련해 줘야 함
+      여기서는 body에 margin-bottom을 넣음
+    </footer>
+    <br>
+    <div class="text">
+      <img src="kakaofriends1.jpg" alt="카카오프렌즈" width="30%"height="30%">
+      <strong>float는 이미지 주위를 텍스트로 감싸기 위해 만들어진 것이다.</strong> <br>
+      나랏말ᄊᆞ미 中듀ᇰ國귁에 달아 文문字ᄍᆞᆼ와로 서르 ᄉᆞᄆᆞᆺ디 아니ᄒᆞᆯᄊᆡ 이런 젼ᄎᆞ로 어린百ᄇᆡᆨ姓셔ᇰ이 니르고져 호ᇙ 배 이셔도 ᄆᆞᄎᆞᆷ내 제 ᄠᅳ들 시러 펴디 몯ᄒᆞᇙ 노미 하니라 내 이ᄅᆞᆯ 爲윙ᄒᆞ야 어엿비 너겨 새로 스믈여듧 字ᄍᆞᆼᄅᆞᆯ ᄆᆡᇰᄀᆞ노니 사ᄅᆞᆷ마다 ᄒᆡᅇᅧ 수ᄫᅵ 니겨 날로 ᄡᅮ메 便뼌安ᅙᅡᆫ킈 ᄒᆞ고져 ᄒᆞᇙ ᄯᆞᄅᆞ미니라ㄱ·ᄂᆞᆫ:엄쏘·리·니君군ㄷ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞᄐᆞ·니ᄀᆞᆯ·ᄫᅡ·쓰·면虯뀨ᇢㅸ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니·라ㅋ·ᄂᆞᆫ:엄쏘·리·니快·쾡ㆆ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니·라ㆁ·ᄂᆞᆫ:엄쏘·리·니業·ᅌᅥᆸ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니·라ㄷ·ᄂᆞᆫ·혀쏘·리·니斗두ᇢㅸ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니ᄀᆞᆯ·ᄫᅡ·쓰·면覃땀ㅂ字·ᄍᆞᆼ·처ᅀᅥᆷ·펴·아·나ᄂᆞᆫ소·리·ᄀᆞ·ᄐᆞ니·라
+    </div>
+    <br>
+    <div class="box">
+      떠 있는 것 처럼 보인다.
+    </div>
+    <section class="section2">
+      section은 실제로 div 다음에 있다. 하지만 div가 왼쪽으로 떠 있기 떄문에 겹쳐있는것처럼 보인다. section안의 텍스트가 div주위에 떠 있고 section이 전체를 감싸고 있다.
+    </section>
+  </body>
+</html>

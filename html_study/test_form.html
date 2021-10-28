@@ -1,0 +1,73 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>test_form</title>
+  </head>
+  <body>
+    <form  action="#" method="post">
+      <fieldset style="width:150; height:100">
+        <legend>개인 정보 입력</legend>
+        이름: <input type="text" name="name"/>
+        나이: <input type="text" name="age"/>
+      </fieldset>
+      <br/>
+      <fieldset style="width:150; height:100">
+        <legend>여가 활동</legend>
+        취미: <input type="text" name="hobby"/ >
+        특기: <input type="text" name="spe"/ >
+      </fieldset>
+    </form>
+    <form  action="#" method="post">
+    <fieldset style="width:150">
+      <legend>개인 정보 입력</legend>
+      이름: <input type="text" name="name"/>
+      주민 번호 : <input type="text" name="secu_num"
+      pattern="\d{6}\-\d{7}"
+      title="123456-1234567 형식으로 입력해주세요." />
+      아이디: <input type="text" name="id"/ >
+      패스워트: <input type="password" name="pw"/>
+      성별: 남 <input type="radio" name="gender" />
+      여 <input type="radio" name="gender"/ ><br/>
+      관심사 : 연애 <input type="checkbox" name="love" />
+      스포츠 <input type="checkbox" name="sport"/ >
+      IT <<input type="checkbox" name="it" /><br/>
+      <input type="submit" name="submit" value="submit"/>
+      <input type="reset" name="reset" value="reset">
+
+    </fieldset>
+
+    </form>
+    <form  action="#" method="post">
+      <fieldset style="width:300">
+        <legend>개인 정보 입력</legend>
+        지역선택<br/>
+        <select name="city1" size="4">
+          <option value="seongnam">성남시</option>
+          <option value="suwon">수원시</option>
+          <option value="yongin">용인시</option>
+          <option value="gwacheon">과천시</option>
+          <option value="hanam">하남시</option>
+        </select></br>
+        지역선택</br>
+        <select  name="city2">
+          <optgroup label="서울">
+            <option value="songpa">송파구</option>
+            <option value="gangnam">강남구</option>
+            <option value="seocho">서초구</option>
+            <option value="junggu">중구</option>
+          </optgroup>
+          <optgroup label="경기도">
+            <option value="seongnam">성남시</option>
+            <option value="suwon">수원시</option>
+            <option value="yongin">용인시</option>
+            <option value="gwacheon">과천시</option>
+            <option value="hanam">하남시</option>
+          </optgroup>
+        </select></br>
+        <input type="submit" name="submit" value="submit"/>
+        <input type="reset" name="reset" value="reset"/>
+      </fieldset>
+
+    </form>
+  </body>
+</html>
