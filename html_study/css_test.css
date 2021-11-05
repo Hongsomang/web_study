@@ -100,6 +100,7 @@ img{
   margin: 0 0 1em 1em;
 }
 .text{
+  overflow: auto;
   border: solid red 5px;
 }
 .box{
@@ -112,4 +113,19 @@ img{
 .section2{
   border: solid black 5px;
    background-color: yellow;
+}
+.clearfix{
+  float: right;
+  width: 50%
+}
+article img{
+  float: right;
+  width: 50%
+}
+.nav_percent{
+  float: left;
+  width: 25%;
+}
+.section_percent{
+  margin-left: 25%;
 }

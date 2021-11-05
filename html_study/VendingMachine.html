@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function get_money(a){
+        console.log(a);
+        const resultElement=document.getElementById('result');
+        let result=resultElement.innerText; /* 현재 표시된 값 */
+        result=parseInt(result)+a;
+        changeColor(result);
+        resultElement.innerText=result;/*  결과내보냄 */
+      }
+
+      function buy(price){
+        console.log("buy"+price);
+        const resultElement=document.getElementById('result');
+        let result=parseInt(resultElement.innerText);
+        console.log("buy_reuslt"+result);
+        if(result>=price){
+            result=result-price;
+            console.log("buy_reuslt"+result);
+            changeColor(result);
+            resultElement.innerText=result;
+        }
+        else {
+          alert("돈이 부족합니다.");
+        }
+      }
+      function changeColor(money){
+        const water=document.getElementById('water');
+        const coffee=document.getElementById('coffee');
+        const tea=document.getElementById('tea');
+        if(money>=500){
+            console.log("물");
+            water.style.color="#0000ff";
+            if(money>=700){
+              console.log("커피");
+              coffee.style.color="#0000ff";
+              if(money>=1000){
+                  tea.style.color="#0000ff";
+                console.log("옥수수");
+              }
+              else{
+                tea.style.color="#ff0000";
+              }
+            }else {
+              coffee.style.color="#ff0000";
+              tea.style.color="#ff0000";
+            }
+        }else {
+          water.style.color="#ff0000";
+          coffee.style.color="#ff0000";
+          tea.style.color="#ff0000";
+        }
+      }
+    </script>
+  </head>
+  <body>
+  <h1>자판기</h1>
+  <input type="button" id="coffee" value="커피(700원)" style="color:red" onclick="buy(700)"/>
+  <input type="button" id="tea" value="옥수수수염차(1000원)" style="color:red" onclick="buy(1000)"/>
+  <input type="button" id="water" value="물(500원)" style="color:red" onclick="buy(500)"/>
+  <br><br>
+  <input type="button" name="1000won" value="1000원" onclick="get_money(1000)"/>
+  <input type="button" name="500won" value="500원" onclick="get_money(500)"/>
+  <input type="button" name="100won" value="100원" onclick="get_money(100)"/>
+  <br><br>
+  <div class="">
+      현재 금액 : <div id="result">0</div>원
+  </div>
+
+  </body>
+</html>
