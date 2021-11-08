@@ -32,6 +32,7 @@
     + 해당되는 아이디에 접근한다.
     + innerText : 해당되는 아이디의 텍스트를 얻는다.
     + style.color : 해당되는 아이디의 글자색을 변경한다.
+    + value: input text에서 값 얻을때 사용
   + parseInt()
     + 문자열을 숫자로 바꿔줌
 
