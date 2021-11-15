@@ -3,19 +3,34 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css"href="../css/RandomMenu.css">
+    <script type="text/javascript" src="../js/RandomMenu.js">
 
+    </script>
     <title>랜덤 메뉴</title>
   </head>
   <body>
   <div class="main_layout">
     <div class="top_layout">
-      <input type="button" id="random_btn" value="랜덤 선택">
+      <input type="button" id="random_btn" value="랜덤 선택" onclick="randomClick()">
     </div>
     <div class="middle_layout">
-      2
+      <div class="middle_top_layout">
+        <div class="title">
+          오늘의 메뉴:
+        </div>
+        <div id="menu_name">
+          ㅎㅎ
+        </div>
+      </div>
+      <div class="middle_bottom_layout">
+        <input type="image" id="menu_img" src="../img/cake.jpg" alt="메뉴" >
+      </div>
     </div>
     <div class="bottom_layout">
-      3
+      <img src="../img/cake.jpg" class="menu_btn" id="cake" onclick="menu_choose(0)"/>
+      <img src="../img/hamburger.jpg" class="menu_btn" id="hamburger" onclick="menu_choose(1)"/>
+      <img src="../img/steak.jpg" class="menu_btn" id="steak" onclick="menu_choose(2)"/>
+      <img src="../img/toast.jpg" class="menu_btn" id="toast" onclick="menu_choose(3)" />
     </div>
   </div>
   </body>

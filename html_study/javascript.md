@@ -35,4 +35,24 @@
     + value: input text에서 값 얻을때 사용
   + parseInt()
     + 문자열을 숫자로 바꿔줌
-
+  
+  + Math.random()
+  
+    + 숫자를 무작위로 내보냄
+  
+    + 원하는 범위 설정
+  
+      + ```
+        const randomNum = Math.random()*num //0에서 num미만 숫자 출력
+        ```
+  
+    + 정수 출력
+  
+      + Math.floor() 사용 -소숫점 이하 내림하는 함수
+  
+      + ```
+        const randomNum = Math.random() * num
+        const randomNumFloor = Math.floor(randomNum)
+        ```
+  
+        
