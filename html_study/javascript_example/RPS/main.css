@@ -1,0 +1,26 @@
+.mainlayout{
+    width: 600px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 5px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    padding-left: 5px;
+
+}
+.bottomlayout{
+    padding-top: 10px;
+   
+}
+#result{
+    white-space: nowrap;
+   
+}
+div span{
+    padding-left: 30px;
+    padding-right:30px ;
+}

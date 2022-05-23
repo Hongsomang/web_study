@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="main.js" type="text/javascript"></script>
+    <title>RockScissorsPaper</title>
+</head>
+<body onload="showimg()">
+    <div class="mainlayout">
+        <div >
+            <img id="loadimage1" src="image/rock.png" alt="" onclick="imageClick()">
+            <img id="loadimage2" src="image/scissors.png" alt="" onclick="imageClick()">
+            <img id="loadimage3" src="image/paper.png" alt="" onclick="imageClick()">
+        </div>
+        <div>
+            <span>참가자1</span>
+            <span>참가자2</span>
+            <span>참가자3</span>
+        </div>
+        <div class="bottomlayout">
+            결과:<span id="result">ㅏㅓㅓㅓ</span>
+        </div>
+    </div>
+</body>
+</html>
